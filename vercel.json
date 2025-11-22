@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "sentinel-ai-frontend/package.json",
+      "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -16,7 +16,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/sentinel-ai-frontend/$1"
+      "dest": "/frontend/$1"
     }
   ]
 }

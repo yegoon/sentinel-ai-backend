@@ -1,9 +1,15 @@
 {
-  "name": "sentinel-ai-frontend",
+  "name": "sentinel-ai",
   "version": "1.0.0",
-  "description": "Sentinel AI Kenya - Fraud Detection Dashboard",
-  "type": "module",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
   "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "start:frontend": "cd frontend && npm run preview",
+    "start:backend": "uvicorn main:app --reload",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
